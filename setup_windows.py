@@ -19,7 +19,7 @@ def get_config():
     include_dirs = [ os.path.join(connector, r'include') ]
     extra_compile_args = [ '/Zl' ]
     
-    name = "MySQL-python"
+    name = "python-MySQLdb"
     if enabled(options, 'embedded'):
         name = name + "-embedded"
     metadata['name'] = name

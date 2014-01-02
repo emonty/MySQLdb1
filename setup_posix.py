@@ -75,7 +75,7 @@ def get_config():
         if client in libraries:
             libraries.remove(client)
 
-    name = "MySQL-python"
+    name = "python-MySQLdb"
     if enabled(options, 'embedded'):
         name = name + "-embedded"
     metadata['name'] = name
